@@ -26,3 +26,14 @@
 
 // CORRECTION
 
+const tweet = prompt("Enter your tweet");
+const tweetCount = tweet.length;
+const remainingChars = 240 - tweetCount;
+
+if (tweetCount > 240) {
+  alert(
+    "You have exceeded the 240-character limits. Please shorten your tweet."
+  );
+} else {
+
+}
