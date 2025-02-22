@@ -35,5 +35,11 @@ if (tweetCount > 240) {
     "You have exceeded the 240-character limits. Please shorten your tweet."
   );
 } else {
-
+  alert(
+    "You have inserted " +
+      tweetCount +
+      " characters and you have " +
+      remainingChars +
+      " characters remaining."
+  );
 }
