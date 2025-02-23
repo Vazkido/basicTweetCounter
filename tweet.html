@@ -22,10 +22,13 @@
         justify-content: center;
       }
       .input {
-        width: 600px;
-        height: 300px;
+        width: 400px;
+        height: 200px;
         color: red;
         background-color: yellow;
+      }
+      #enter, .input {
+        margin-left: 20px;
       }
     </style>
   </head>
@@ -35,8 +38,9 @@
     </header>
     <main>
       <div class="fieldiv" id="fieldiv">
-        <label for="text-">ENTER YOUR TWEET HERE</label>
-        <input type="text" class="input"/>
+        <p><label for="text-" id="enter">ENTER YOUR TWEET HERE</label></p>
+        <input type="text" class="input"/> <hr>
+        
       </div>
     </main>
 
