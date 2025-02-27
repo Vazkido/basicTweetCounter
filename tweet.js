@@ -11,7 +11,15 @@ tweetInput.addEventListener("input", () => {
   submitBtn.disabled = textLength === 0;
 });
 
+// Simulate tweet submission
+submitBtn.addEventListener("click", () => {
+  alert(`Tweet Sent: ${tweetInput.value}`);
+  tweetInput.value = ""; // Clear input after submitting
+  charCount.textContent = "0 / 280"; //Reset counter
+  submitBtn.disabled = true; //Disabled button
+});
 
+//simulate tweet submission
 
 
 
