@@ -4,54 +4,12 @@ const submitBtn = document.getElementById("submitBtn");
 
 // Update character count
 tweetInput.addEventListener("input", () => {
-  let textLength = tweetInputInput.value.length;
+  let textLength = tweetInput.value.length;
   charCount.textContent = `${textLength} / 280`;
 
   //Enable/Disable button based on input length
   submitBtn.disabled = textLength === 0;
 });
-
-// Simulate tweet submission
-submitBtn.addEventListener("click", () => {
-  alert(`Tweet Sent: ${tweetInput.value}`);
-  tweetInput.value = ""; // Clear input after submitting
-  charCount.textContent = "0 / 280"; //Reset counter
-  submitBtn.disabled = true; //Disabled button
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
