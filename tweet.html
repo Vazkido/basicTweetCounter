@@ -47,7 +47,19 @@
   }
 
   button {
-    
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
   }
 
 
@@ -59,10 +71,9 @@
   </header>
   <main class="container">
     <label for="tweetInput">ENTER YOUR TWEET HERE</label>
-    <p><textarea name="tweetInput" class="tweet-box" maxlength="280"></textarea></p>
+    <textarea id="tweetInput" class="tweet-box" maxlength="280"></textarea>
     <p id="charCount">0 / 280</p>
     <button id="submitBtn" disabled>SUBMIT</button>
-
   </main>
 
 

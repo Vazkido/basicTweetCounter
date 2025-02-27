@@ -1,3 +1,50 @@
+const tweetInput = document.getElementById("tweetInput");
+const charCount = document.getElementById("charCount");
+const submitBtn = document.getElementById("submitBtn");
+
+// Update character count
+tweetInput.addEventListener("input", () => {
+    let textLength = tweetInputInput.value.length;
+    charCount.textContent = `${textLength} / 280`;
+
+    //Enable/Disable button based on input length
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { text } from "body-parser";
 // import { log } from "console";
 
@@ -25,46 +72,6 @@
 
 
 // CORRECTION
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // const tweet = prompt("Enter your tweet");
