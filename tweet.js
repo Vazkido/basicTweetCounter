@@ -19,21 +19,6 @@ submitBtn.addEventListener("click", () => {
   submitBtn.disabled = true; //Disabled button
 });
 
-//simulate tweet submission
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import { text } from "body-parser";
 // import { log } from "console";
 
