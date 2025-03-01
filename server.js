@@ -11,4 +11,8 @@ app.use(cors()); // Allow frontend requests
 // Handle Tweet submission
 app.post("/tweet,", (req, res) => {
     const { tweet } = req.body;
+
+    if (!tweet || tweet.length > 280) {
+        return res.status(400).json({ error: "Invalid tweet length!"});
+    }
 })
