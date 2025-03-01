@@ -15,4 +15,7 @@ app.post("/tweet,", (req, res) => {
     if (!tweet || tweet.length > 280) {
         return res.status(400).json({ error: "Invalid tweet length!"});
     }
-})
+
+    console.log("Tweet received:", tweet);
+    res.json({message: "Tweet posted successfully!"});
+});
