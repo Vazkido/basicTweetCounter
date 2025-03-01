@@ -7,3 +7,8 @@ const app = express();
 
 app.use(express.json()); // parse JSON body
 app.use(cors()); // Allow frontend requests
+
+// Handle Tweet submission
+app.post("/tweet,", (req, res) => {
+    const { tweet } = req.body;
+})
